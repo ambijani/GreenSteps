@@ -1,0 +1,197 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set a background color and font styles for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Style the header */
+header {
+  background-color: #4CAF50;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  /* Add additional styles here if needed */
+}
+
+/* Style the navigation menu */
+/* Style the navigation menu with Flexbox */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  /* Add additional styles here if needed */
+}
+
+/* Style the sections */
+section {
+  padding: 2rem;
+  background-color: #fff;
+  margin: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  /* Add additional styles here if needed */
+}
+
+/* Style the about section */
+#about {
+  text-align: center;
+}
+
+#about img {
+  max-width: 100%;
+  height: auto;
+  /* Add additional styles here if needed */
+}
+
+/* Style the eco tips section */
+#tips {
+  text-align: center;
+}
+
+.tip-card {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  /* Add additional styles here if needed */
+}
+
+.tip-card1 img {
+  max-width: 25%;
+  height: auto;
+  /* Add additional styles here if needed */
+}
+
+.tip-card2 img {
+  max-width: 500%;
+  height: auto;
+  /* Add additional styles here if needed */
+}
+
+/* Style the impact stories section */
+#stories {
+  text-align: center;
+}
+
+.impact-story {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  /* Add additional styles here if needed */
+}
+
+.impact-story img {
+  max-width: 50%;
+  height: auto;
+  /* Add additional styles for image size, border, or spacing */
+}
+
+/* Style the video container */
+.impact-story iframe {
+  display: block;
+  /* Ensure the video player is on a new line */
+  margin: 0 auto;
+  /* Center the video horizontally */
+}
+
+/* Style the links for article thumbnails */
+.impact-story a {
+  text-decoration: none;
+  /* Remove underline from links */
+  color: #333;
+  /* Set link color */
+  display: block;
+  /* Make the entire image and text a clickable block */
+}
+
+
+/* Style the get involved section */
+#get-involved {
+  text-align: center;
+}
+
+#get-involved form {
+  margin-top: 20px;
+}
+
+#get-involved input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* Add additional styles here if needed */
+}
+
+/* Style the "Get Involved" button with pseudo-selectors */
+#get-involved button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  /* Smooth background color transition on hover */
+}
+
+#get-involved button:hover {
+  background-color: #45a049;
+  /* Darker green on hover */
+}
+
+
+/* Style the footer */
+/* Style the footer links */
+/* Style the footer */
+footer {
+  text-align: center;
+  background-color: #4CAF50;
+  /* Green background color */
+  color: #fff;
+  /* White text color */
+  padding: 1rem 0;
+}
+
+/* Style the footer links */
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: color 0.3s;
+  /* Smooth color transition on hover */
+}
+
+footer a:hover {
+  color: #333;
+  /* Darker text color on hover */
+}

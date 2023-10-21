@@ -14,85 +14,125 @@
   <!-- Header Section -->
   <header>
     <nav>
-      <ul>
+      <ul class="nav-menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#tips">Eco Tips</a></li>
         <li><a href="#stories">Impact Stories</a></li>
         <li><a href="#get-involved">Get Involved</a></li>
+        <li><a href="#petition">Sign Out Petition</a></li>
+        <li><button id="theme-button">Toggle Dark Mode</button></li>
       </ul>
     </nav>
   </header>
 
-  <!-- About Us Section -->
-  <section id="about">
-    <h1>About Us</h1>
-    <p>Welcome to GreenSteps - Your Eco-Friendly Journey. Our mission is to inspire positive environmental change by
-      providing you with practical tips and impactful stories. Together, we can make a difference for a greener planet.
-    </p>
-    <img src="img/download123.jpg" alt="Nature Image">
-  </section>
+  <main>
+    <!-- About Us Section -->
+    <section id="about">
+      <h1>About Us</h1>
+      <p>Welcome to GreenSteps - Your Eco-Friendly Journey. Our mission is to inspire positive environmental change by
+        providing you with practical tips and impactful stories. Together, we can make a difference for a greener
+        planet.
+      </p>
+      <img src="img/download123.jpg" alt="Nature Image">
+    </section>
 
-  <!-- Eco Tips Section -->
-  <section id="tips">
-    <h2>Eco Tips</h2>
-    <div class="tip-card1">
-      <img src="img/ReduceFootprintInfographic2.2.png" alt="Eco Tip Icon">
-      <p>Tip 1: Reduce your carbon footprint by carpooling or using public transportation whenever possible.</p>
+    <!-- Eco Tips Section -->
+    <section id="tips">
+      <h2>Eco Tips</h2>
+      <div class="tip-card1">
+        <img src="img/ReduceFootprintInfographic2.2.png" alt="Eco Tip Icon">
+        <p>Tip 1: Reduce your carbon footprint by carpooling or using public transportation whenever possible.</p>
+      </div>
+      <div class="tip-card2">
+        <img src="img/downloadasdfsfs.jpg" alt="Eco Tip Icon">
+        <p>Tip 2: Save energy by turning off lights and electronics when not in use.</p>
+      </div>
+      <!-- Add more tip cards here -->
+    </section>
+
+    <!-- Impact Stories Section -->
+    <section id="stories">
+      <h2>Impact Stories</h2>
+      <div class="impact-story">
+        <a
+          href="https://www.euronews.com/green/2023/10/04/superfood-based-beanless-coffee-could-slash-emissions-and-water-use-by-94">
+          <img src="img/773x435_cmsv2_79ebe1d4-1347-5d93-a89b-b04f7c545f39-7943038.webp" alt="Impact Story Thumbnail 1">
+        </a>
+        <p>Story 1: A Seattle-based startup backed by some of the investors behind Beyond Meat has launched the world's
+          first 'beanless coffee'. Its inventors hope to slash the environmental impact of the popular drink..</p>
+      </div>
+      <div class="impact-story">
+        <a
+          href="https://www.euronews.com/green/2023/09/29/saving-brazils-amazon-these-tree-hugging-ai-boxes-can-detect-when-destruction-starts">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/DusyTpo7Z60?si=DnRnQ2bZwBlfjjSE"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </a>
+        <p>Story 2: Small, artificially intelligent (AI) boxes tied to tree trunks in the Brazilian Amazon are the
+          latest
+          weapon against deforestation.</p>
+      </div>
+      <!-- Add more impact stories here -->
+    </section>
+
+
+    <!-- Get Involved Section -->
+    <section id="get-involved">
+      <h2>Get Involved</h2>
+      <p>Join us in our journey towards a greener planet. Subscribe to receive regular eco-tips and updates. Together,
+        we
+        can make a positive impact!</p>
+      <form>
+        <input type="email" placeholder="Enter your email">
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <div class="petition" id="petition">
+      <h2>Sign Our Petition 📢</h2>
+      <div class="petition-container">
+        <div class="petition-para">
+          <!-- Your petition information goes here -->
+          <p>Support our cause to protect the environment.</p>
+        </div>
+
+        <div class="signatures" id="signatures">
+          <p>🖊️ DJ from Brooklyn supports this.</p>
+          <p>🖊️ Amy from Queens supports this.</p>
+          <p>🖊️ Teresa from Harlem supports this.</p>
+        </div>
+      </div>
+
+      <!-- Sign Petition Form -->
+      <form id="sign-petition">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required placeholder="Enter your name">
+        <br>
+        <label for="hometown">Hometown:</label>
+        <input type="text" id="hometown" required placeholder="Enter your hometown">
+      </form>
+
+      <!-- Sign Now Button -->
+      <button id="sign-now-button">Sign Now</button>
+
+      <!-- Petition Counter -->
+      <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p>
     </div>
-    <div class="tip-card2">
-      <img src="img/downloadasdfsfs.jpg" alt="Eco Tip Icon">
-      <p>Tip 2: Save energy by turning off lights and electronics when not in use.</p>
-    </div>
-    <!-- Add more tip cards here -->
-  </section>
-
-  <!-- Impact Stories Section -->
-  <section id="stories">
-    <h2>Impact Stories</h2>
-    <div class="impact-story">
-      <a
-        href="https://www.euronews.com/green/2023/10/04/superfood-based-beanless-coffee-could-slash-emissions-and-water-use-by-94">
-        <img src="img/773x435_cmsv2_79ebe1d4-1347-5d93-a89b-b04f7c545f39-7943038.webp" alt="Impact Story Thumbnail 1">
-      </a>
-      <p>Story 1: A Seattle-based startup backed by some of the investors behind Beyond Meat has launched the world's
-        first 'beanless coffee'. Its inventors hope to slash the environmental impact of the popular drink..</p>
-    </div>
-    <div class="impact-story">
-      <a
-        href="https://www.euronews.com/green/2023/09/29/saving-brazils-amazon-these-tree-hugging-ai-boxes-can-detect-when-destruction-starts">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/DusyTpo7Z60?si=DnRnQ2bZwBlfjjSE"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-      </a>
-      <p>Story 2: Small, artificially intelligent (AI) boxes tied to tree trunks in the Brazilian Amazon are the latest
-        weapon against deforestation.</p>
-    </div>
-    <!-- Add more impact stories here -->
-  </section>
 
 
-  <!-- Get Involved Section -->
-  <section id="get-involved">
-    <h2>Get Involved</h2>
-    <p>Join us in our journey towards a greener planet. Subscribe to receive regular eco-tips and updates. Together, we
-      can make a positive impact!</p>
-    <form>
-      <input type="email" placeholder="Enter your email">
-      <button type="submit">Subscribe</button>
-    </form>
-  </section>
-
-  <!-- Footer Section -->
-  <footer>
-    <p>Contact us at info@greensteps.com</p>
-    <p>&copy; 2023 GreenSteps - Your Eco-Friendly Journey</p>
-    <!-- External links -->
-    <a href="https://www.greenmatch.co.uk/blog/how-to-be-more-eco-friendly">Eco-Friendly Tips</a>
-    <a href="https://justenergy.com/blog/the-top-9-environmentally-friendly-tips-to-save-the-planet/">Save the
-      Planet</a>
-  </footer>
+    <!-- Footer Section -->
+    <footer>
+      <p>Contact us at info@greensteps.com</p>
+      <p>&copy; 2023 GreenSteps - Your Eco-Friendly Journey</p>
+      <!-- External links -->
+      <a href="https://www.greenmatch.co.uk/blog/how-to-be-more-eco-friendly">Eco-Friendly Tips</a>
+      <a href="https://justenergy.com/blog/the-top-9-environmentally-friendly-tips-to-save-the-planet/">Save the
+        Planet</a>
+    </footer>
+  </main>
+  <script src="index.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Link to your CSS stylesheet -->
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="img/1995160.png" type="image/x=icon">
   <title>GreenSteps - Your Eco-Friendly Journey</title>
@@ -26,7 +25,15 @@
     </nav>
   </header>
 
+
+
   <main>
+
+    <section class="home">
+      <h1 class="title" id="my-title">Green Steps</h1>
+      <p>Your source for sustainable living and environmental awareness.</p>
+    </section>
+
     <!-- About Us Section -->
     <section id="about">
       <h1>About Us</h1>
@@ -77,49 +84,31 @@
       <!-- Add more impact stories here -->
     </section>
 
-
-    <!-- Get Involved Section -->
-    <section id="get-involved">
-      <h2>Get Involved</h2>
-      <p>Join us in our journey towards a greener planet. Subscribe to receive regular eco-tips and updates. Together,
-        we
-        can make a positive impact!</p>
-      <form>
-        <input type="email" placeholder="Enter your email">
-        <button type="submit">Subscribe</button>
-      </form>
-    </section>
-
-    <div class="petition" id="petition">
+    <section class="petition">
       <h2>Sign Our Petition 📢</h2>
-      <div class="petition-container">
-        <div class="petition-para">
-          <!-- Your petition information goes here -->
-          <p>Support our cause to protect the environment.</p>
-        </div>
-
-        <div class="signatures" id="signatures">
-          <p>🖊️ DJ from Brooklyn supports this.</p>
-          <p>🖊️ Amy from Queens supports this.</p>
-          <p>🖊️ Teresa from Harlem supports this.</p>
-        </div>
-      </div>
-
-      <!-- Sign Petition Form -->
+      <p>Join us in our mission for change. Sign our petition and make a difference today!</p>
       <form id="sign-petition">
-        <label for="name">Name:</label>
-        <input type="text" id="name" required placeholder="Enter your name">
-        <br>
-        <label for="hometown">Hometown:</label>
-        <input type="text" id="hometown" required placeholder="Enter your hometown">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+        </div>
+        <div>
+          <label for="hometown">Hometown:</label>
+          <input type="text" id="hometown" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+        </div>
       </form>
-
-      <!-- Sign Now Button -->
       <button id="sign-now-button">Sign Now</button>
-
-      <!-- Petition Counter -->
+      <div id="signatures" class="signatures">
+        <p>🖊️ DJ from Brooklyn supports this.</p>
+        <p>🖊️ Amy from Queens supports this.</p>
+        <p>🖊️ Teresa from Harlem supports this.</p>
+      </div>
       <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p>
-    </div>
+    </section>
 
 
     <!-- Footer Section -->

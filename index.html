@@ -20,20 +20,20 @@
         <li><a href="#stories">Impact Stories</a></li>
         <li><a href="#petition">Sign Our Petition</a></li>
         <li><button id="theme-button">Toggle Dark Mode</button></li>
+        <li><button id="reduce-motion-button">Reduce Motion</button></li>
       </ul>
     </nav>
   </header>
 
-
-
   <main>
-
-    <section class="home">
+    <!-- Home Section -->
+    <section id="home">
       <h1 class="title" id="my-title">Green Steps</h1>
       <p>Your source for sustainable living and environmental awareness.</p>
     </section>
 
     <!-- About Us Section -->
+    <div class="revealable">
     <section id="about">
       <h1>About Us</h1>
       <p>Welcome to GreenSteps - Your Eco-Friendly Journey. Our mission is to inspire positive environmental change by
@@ -42,8 +42,10 @@
       </p>
       <img src="img/download123.jpg" alt="Nature Image">
     </section>
+    </div>
 
     <!-- Eco Tips Section -->
+    <div class="revealable">
     <section id="tips">
       <h2>Eco Tips</h2>
       <div class="tip-card1">
@@ -56,19 +58,19 @@
       </div>
       <!-- Add more tip cards here -->
     </section>
+    </div>
 
     <!-- Impact Stories Section -->
-    <section id="stories">
+    <div class="revealable">
+      <section id="impact-story">
       <h2>Impact Stories</h2>
-      <div class="impact-story">
         <a
           href="https://www.euronews.com/green/2023/10/04/superfood-based-beanless-coffee-could-slash-emissions-and-water-use-by-94">
           <img src="img/773x435_cmsv2_79ebe1d4-1347-5d93-a89b-b04f7c545f39-7943038.webp" alt="Impact Story Thumbnail 1">
         </a>
         <p>Story 1: A Seattle-based startup backed by some of the investors behind Beyond Meat has launched the world's
-          first 'beanless coffee'. Its inventors hope to slash the environmental impact of the popular drink..</p>
-      </div>
-      <div class="impact-story">
+          first 'beanless coffee'. Its inventors hope to slash the environmental impact of the popular drink.</p>
+
         <a
           href="https://www.euronews.com/green/2023/09/29/saving-brazils-amazon-these-tree-hugging-ai-boxes-can-detect-when-destruction-starts">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/DusyTpo7Z60?si=DnRnQ2bZwBlfjjSE"
@@ -79,10 +81,11 @@
         <p>Story 2: Small, artificially intelligent (AI) boxes tied to tree trunks in the Brazilian Amazon are the
           latest
           weapon against deforestation.</p>
-      </div>
       <!-- Add more impact stories here -->
     </section>
+    </div>
 
+    <div class="revealable">
     <section id="petition">
       <h2>Sign Our Petition 📢</h2>
       <p>Join us in our mission for change. Sign our petition and make a difference today!</p>
@@ -108,7 +111,7 @@
       </div>
       <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p>
     </section>
-
+    </div>
 
     <!-- Footer Section -->
     <footer>

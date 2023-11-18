@@ -11,20 +11,24 @@ themeButton.addEventListener("click", toggleDarkMode);
 const signNowButton = document.getElementById("sign-now-button");
 const signatures = document.getElementById("signatures");
 const counter = document.getElementById("counter");
+const petitionForm = document.getElementById("sign-petition");
+const closeButton = document.getElementById("close-modal-button");
 
 let count = 3;
 
-const addSignature = () => {
-  const nameInput = document.getElementById("name");
-  const hometownInput = document.getElementById("hometown");
-  const emailInput = document.getElementById("email");
+const validateForm = () => {
+  const person = {
+    name: document.getElementById("name").value,
+    hometown: document.getElementById("hometown").value,
+    email: document.getElementById("email").value
+  }
 
-  const name = nameInput.value;
-  const hometown = hometownInput.value;
-  const email = emailInput.value;
+  const name = person.name;
+  const hometown = person.hometown;
+  const email = person.email;
 
   if (name.length < 2 || hometown.length < 2 || (!email.includes('.com') && !email.includes('.edu') && !email.includes('.org'))) {
-    // Highlight invalid input fields with error class
+    alert("Invalid signature. Please make sure all fields are correctly filled.");
     if (name.length < 2) {
       nameInput.classList.add('error');
     } else {
@@ -40,30 +44,39 @@ const addSignature = () => {
     } else {
       emailInput.classList.remove('error');
     }
-
-    // Show an alert for invalid signature
-    alert("Invalid signature. Please make sure all fields are correctly filled.");
-  } else {
-    // Create a new signature paragraph
-    const newSignature = document.createElement("p");
-    newSignature.textContent = `🖊️ ${name} from ${hometown} supports this.`;
-
-    signatures.appendChild(newSignature);
-
-    count++;
-    counter.textContent = `🖊️ ${count} people have signed this petition and support this cause.`;
-
-    nameInput.value = "";
-    hometownInput.value = "";
-    emailInput.value = "";
-
-    nameInput.classList.remove('error');
-    hometownInput.classList.remove('error');
-    emailInput.classList.remove('error');
+    return;
   }
+  addSignature(person);
 };
+signNowButton.addEventListener("click", validateForm);
 
-signNowButton.addEventListener("click", addSignature);
+petitionForm.addEventListener("submit", function(event) {
+  event.preventDefault();
+  const person = validateForm();
+
+  if (person) {
+    addSignature(person);
+    petitionForm.reset();
+    toggleModal(person);
+  }
+});
+
+
+const addSignature = (person) => {
+  // Create a new signature paragraph
+  const newSignature = document.createElement("p");
+  newSignature.textContent = `🖊️ ${person.name} from ${person.hometown} supports this.`;
+
+  signatures.appendChild(newSignature);
+
+  count++;
+  counter.textContent = `🖊️ ${count} people have signed this petition and support this cause.`;
+
+  petitionForm.reset();
+
+  toggleModal(person);
+
+};
 
 //animation and scroll
 let animation = {
@@ -118,3 +131,43 @@ function reduceMotion() {
       opacity ${animation.transitionDuration} ${animation.transitionTimingFunction}`;
   }
 }
+
+const toggleModal = (person) => {
+  const modal = document.getElementById("thanks-modal");
+  const modalContent = document.getElementById("modal-text-container");
+
+  modal.style.display = "flex";
+
+  modalContent.innerHTML = `
+    <p id="thanks-modal-content">Thank you so much ${person.name}!</p>
+    <button id="close-modal-button">Close</button>
+  `;
+
+  const closeButton = document.getElementById("close-modal-button");
+  closeButton.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 3000);
+
+  animateModalImage();
+};
+
+const animateModalImage = () => {
+  let scaleFactor = 1;
+  const modalImage = document.getElementById("modal-image");
+
+  const intervalID = setInterval(() => {
+    scaleFactor === 1
+      ? (scaleFactor = 0.8)
+      : (scaleFactor = 1);
+    modalImage.style.transform = `scale(${scaleFactor})`;
+  }, 500);
+
+  setTimeout(() => {
+    clearInterval(intervalID);
+  }, 3000);
+
+};

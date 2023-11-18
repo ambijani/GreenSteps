@@ -34,36 +34,36 @@
 
     <!-- About Us Section -->
     <div class="revealable">
-    <section id="about">
-      <h1>About Us</h1>
-      <p>Welcome to GreenSteps - Your Eco-Friendly Journey. Our mission is to inspire positive environmental change by
-        providing you with practical tips and impactful stories. Together, we can make a difference for a greener
-        planet.
-      </p>
-      <img src="img/download123.jpg" alt="Nature Image">
-    </section>
+      <section id="about">
+        <h1>About Us</h1>
+        <p>Welcome to GreenSteps - Your Eco-Friendly Journey. Our mission is to inspire positive environmental change by
+          providing you with practical tips and impactful stories. Together, we can make a difference for a greener
+          planet.
+        </p>
+        <img src="img/download123.jpg" alt="Nature Image">
+      </section>
     </div>
 
     <!-- Eco Tips Section -->
     <div class="revealable">
-    <section id="tips">
-      <h2>Eco Tips</h2>
-      <div class="tip-card1">
-        <img src="img/ReduceFootprintInfographic2.2.png" alt="Eco Tip Icon">
-        <p>Tip 1: Reduce your carbon footprint by carpooling or using public transportation whenever possible.</p>
-      </div>
-      <div class="tip-card2">
-        <img src="img/downloadasdfsfs.jpg" alt="Eco Tip Icon">
-        <p>Tip 2: Save energy by turning off lights and electronics when not in use.</p>
-      </div>
-      <!-- Add more tip cards here -->
-    </section>
+      <section id="tips">
+        <h2>Eco Tips</h2>
+        <div class="tip-card1">
+          <img src="img/ReduceFootprintInfographic2.2.png" alt="Eco Tip Icon">
+          <p>Tip 1: Reduce your carbon footprint by carpooling or using public transportation whenever possible.</p>
+        </div>
+        <div class="tip-card2">
+          <img src="img/downloadasdfsfs.jpg" alt="Eco Tip Icon">
+          <p>Tip 2: Save energy by turning off lights and electronics when not in use.</p>
+        </div>
+        <!-- Add more tip cards here -->
+      </section>
     </div>
 
     <!-- Impact Stories Section -->
     <div class="revealable">
       <section id="impact-story">
-      <h2>Impact Stories</h2>
+        <h2>Impact Stories</h2>
         <a
           href="https://www.euronews.com/green/2023/10/04/superfood-based-beanless-coffee-could-slash-emissions-and-water-use-by-94">
           <img src="img/773x435_cmsv2_79ebe1d4-1347-5d93-a89b-b04f7c545f39-7943038.webp" alt="Impact Story Thumbnail 1">
@@ -81,37 +81,46 @@
         <p>Story 2: Small, artificially intelligent (AI) boxes tied to tree trunks in the Brazilian Amazon are the
           latest
           weapon against deforestation.</p>
-      <!-- Add more impact stories here -->
-    </section>
+        <!-- Add more impact stories here -->
+      </section>
     </div>
 
     <div class="revealable">
-    <section id="petition">
-      <h2>Sign Our Petition 📢</h2>
-      <p>Join us in our mission for change. Sign our petition and make a difference today!</p>
-      <form id="sign-petition">
-        <div>
-          <label for="name">Name:</label>
-          <input type="text" id="name" required>
+      <section id="petition">
+        <h2>Sign Our Petition 📢</h2>
+        <p>Join us in our mission for change. Sign our petition and make a difference today!</p>
+        <form id="sign-petition">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="hometown">Hometown:</label>
+            <input type="text" id="hometown" name="hometown" required>
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </form>
+        <button id="sign-now-button">Sign Now</button>
+        <div id="signatures" class="signatures">
+          <p>🖊️ DJ from Brooklyn supports this.</p>
+          <p>🖊️ Amy from Queens supports this.</p>
+          <p>🖊️ Teresa from Harlem supports this.</p>
         </div>
-        <div>
-          <label for="hometown">Hometown:</label>
-          <input type="text" id="hometown" required>
-        </div>
-        <div>
-          <label for="email">Email:</label>
-          <input type="email" id="email" required>
-        </div>
-      </form>
-      <button id="sign-now-button">Sign Now</button>
-      <div id="signatures" class="signatures">
-        <p>🖊️ DJ from Brooklyn supports this.</p>
-        <p>🖊️ Amy from Queens supports this.</p>
-        <p>🖊️ Teresa from Harlem supports this.</p>
-      </div>
-      <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p>
-    </section>
+        <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p>
+      </section>
     </div>
+
+    <div id="thanks-modal" class="modal">
+      <div id="modal-text-container">
+        <p id="thanks-modal-content"> Thank you!</p>
+        <button id="close-modal-button">Close</button>
+      </div>
+      <img id="modal-image" src="img/your_image_url.jpeg" alt="Thank you Image">
+    </div>
+
 
     <!-- Footer Section -->
     <footer>
@@ -125,4 +134,5 @@
   </main>
   <script src="index.js"></script>
 </body>
+
 </html>
